@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AE06B7241D5E6F7B0028C201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE06B7231D5E6F7B0028C201 /* main.m */; };
 		AE06B7271D5E6F7B0028C201 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE06B7261D5E6F7B0028C201 /* AppDelegate.m */; };
 		AE06B72A1D5E6F7B0028C201 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE06B7291D5E6F7B0028C201 /* ViewController.m */; };
-		AE06B72D1D5E6F7B0028C201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE06B72B1D5E6F7B0028C201 /* Main.storyboard */; };
 		AE06B72F1D5E6F7B0028C201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE06B72E1D5E6F7B0028C201 /* Assets.xcassets */; };
-		AE06B7321D5E6F7B0028C201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE06B7301D5E6F7B0028C201 /* LaunchScreen.storyboard */; };
+		AE06B73B1D5E785F0028C201 /* ParticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE06B73A1D5E785F0028C201 /* ParticleCell.m */; };
+		AE06B73E1D5E7D0C0028C201 /* ParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE06B73D1D5E7D0C0028C201 /* ParticleView.m */; };
+		AE06B7711D5E7DCE0028C201 /* particles_test.scnp in Resources */ = {isa = PBXBuildFile; fileRef = AE06B7701D5E7DCE0028C201 /* particles_test.scnp */; };
+		AE06B7731D5E81A60028C201 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = AE06B7721D5E81A60028C201 /* particle.png */; };
+		AE06B7751D5E84240028C201 /* Background_Diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = AE06B7741D5E84240028C201 /* Background_Diffuse.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +25,15 @@
 		AE06B7261D5E6F7B0028C201 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE06B7281D5E6F7B0028C201 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AE06B7291D5E6F7B0028C201 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE06B72C1D5E6F7B0028C201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE06B72E1D5E6F7B0028C201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE06B7311D5E6F7B0028C201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE06B7331D5E6F7B0028C201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE06B7391D5E785F0028C201 /* ParticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleCell.h; sourceTree = "<group>"; };
+		AE06B73A1D5E785F0028C201 /* ParticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleCell.m; sourceTree = "<group>"; };
+		AE06B73C1D5E7D0C0028C201 /* ParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleView.h; sourceTree = "<group>"; };
+		AE06B73D1D5E7D0C0028C201 /* ParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleView.m; sourceTree = "<group>"; };
+		AE06B7701D5E7DCE0028C201 /* particles_test.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = particles_test.scnp; sourceTree = "<group>"; };
+		AE06B7721D5E81A60028C201 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+		AE06B7741D5E84240028C201 /* Background_Diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Diffuse.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,16 @@
 		AE06B7211D5E6F7B0028C201 /* SceneKitParticleCollectionExample */ = {
 			isa = PBXGroup;
 			children = (
+				AE06B7761D5E89D60028C201 /* Particles */,
 				AE06B7251D5E6F7B0028C201 /* AppDelegate.h */,
 				AE06B7261D5E6F7B0028C201 /* AppDelegate.m */,
 				AE06B7281D5E6F7B0028C201 /* ViewController.h */,
 				AE06B7291D5E6F7B0028C201 /* ViewController.m */,
-				AE06B72B1D5E6F7B0028C201 /* Main.storyboard */,
+				AE06B7391D5E785F0028C201 /* ParticleCell.h */,
+				AE06B73A1D5E785F0028C201 /* ParticleCell.m */,
+				AE06B73C1D5E7D0C0028C201 /* ParticleView.h */,
+				AE06B73D1D5E7D0C0028C201 /* ParticleView.m */,
 				AE06B72E1D5E6F7B0028C201 /* Assets.xcassets */,
-				AE06B7301D5E6F7B0028C201 /* LaunchScreen.storyboard */,
 				AE06B7331D5E6F7B0028C201 /* Info.plist */,
 				AE06B7221D5E6F7B0028C201 /* Supporting Files */,
 			);
@@ -77,6 +88,16 @@
 				AE06B7231D5E6F7B0028C201 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE06B7761D5E89D60028C201 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				AE06B7741D5E84240028C201 /* Background_Diffuse.png */,
+				AE06B7701D5E7DCE0028C201 /* particles_test.scnp */,
+				AE06B7721D5E81A60028C201 /* particle.png */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,11 +131,12 @@
 				TargetAttributes = {
 					AE06B71E1D5E6F7B0028C201 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5QW5R48CC5;
 					};
 				};
 			};
 			buildConfigurationList = AE06B71A1D5E6F7B0028C201 /* Build configuration list for PBXProject "SceneKitParticleCollectionExample" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -136,9 +158,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE06B7321D5E6F7B0028C201 /* LaunchScreen.storyboard in Resources */,
 				AE06B72F1D5E6F7B0028C201 /* Assets.xcassets in Resources */,
-				AE06B72D1D5E6F7B0028C201 /* Main.storyboard in Resources */,
+				AE06B7711D5E7DCE0028C201 /* particles_test.scnp in Resources */,
+				AE06B7751D5E84240028C201 /* Background_Diffuse.png in Resources */,
+				AE06B7731D5E81A60028C201 /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,31 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE06B72A1D5E6F7B0028C201 /* ViewController.m in Sources */,
+				AE06B73E1D5E7D0C0028C201 /* ParticleView.m in Sources */,
+				AE06B73B1D5E785F0028C201 /* ParticleCell.m in Sources */,
 				AE06B7271D5E6F7B0028C201 /* AppDelegate.m in Sources */,
 				AE06B7241D5E6F7B0028C201 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AE06B72B1D5E6F7B0028C201 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE06B72C1D5E6F7B0028C201 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE06B7301D5E6F7B0028C201 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE06B7311D5E6F7B0028C201 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE06B7341D5E6F7B0028C201 /* Debug */ = {
@@ -263,10 +269,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5QW5R48CC5;
 				INFOPLIST_FILE = SceneKitParticleCollectionExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fyuse.SceneKitParticleCollectionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,10 +283,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5QW5R48CC5;
 				INFOPLIST_FILE = SceneKitParticleCollectionExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fyuse.SceneKitParticleCollectionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -300,6 +312,7 @@
 				AE06B7381D5E6F7B0028C201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
